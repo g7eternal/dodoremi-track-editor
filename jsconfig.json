@@ -1,0 +1,15 @@
+{
+  "extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "5.0",
+    "paths": {
+      "$lib": ["./src/lib"],
+      "$lib/*": ["./src/lib/*"]
+    },
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "allowJs": true
+  },
+  "exclude": ["logs", "secret", "node_modules", "build", "dist"]
+}
